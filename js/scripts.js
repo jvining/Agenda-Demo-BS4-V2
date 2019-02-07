@@ -18,46 +18,50 @@ $(document).ready(function() {
 			$('.collapse').removeClass('show');
 			$('#toggle').html('+ Expand All Panels');
 			$('.card-header').children('i').removeClass('fa-minus').addClass('fa-plus');
-			$('div').attr('style', '');
-		} else {
+ 		} else {
 			$('.collapse').addClass('show');
 			$('#toggle').html('- Collapse All Panels');
 			$('.card-header').children('i').removeClass('fa-plus').addClass('fa-minus');
-			$('div').attr('style', '');
-		}
+ 		}
 	});
 });
+ 
 
 // Sorting
 $(document).ready(function() {
     $('input[type=radio][name=group1]').change(function() {
-        if (this.value == 'dangerButton') {
-			$(".card").parent().parent().attr('hidden',true);
-			$(".card.bg-danger").parent().parent().removeAttr('hidden');
+
+        if (this.value == 'tracktype-break-meal') {
+			$('.card , h4.text-secondary').attr('hidden',true);
+   			$(".card.tracktype-break-meal").attr('hidden',false);
         }
-        if (this.value == 'primaryButton') {
-			$(".card").parent().parent().attr('hidden',true);
-			$(".card.bg-primary").parent().parent().removeAttr('hidden');
+        if (this.value == 'tracktype-keynote') {
+			$('.card , h4.text-secondary').attr('hidden',true);
+  			$(".card.tracktype-keynote").attr('hidden',false);
         }
-        if (this.value == 'warningButton') {
-			$(".card").parent().parent().attr('hidden',true);
-			$(".card.bg-warning").parent().parent().removeAttr('hidden');
+        if (this.value == 'tracktype-panel-discussion') {
+			$('.card , h4.text-secondary').attr('hidden',true);
+  			$(".card.tracktype-panel-discussion").attr('hidden',false);
         }
-        if (this.value == 'successButton') {
-			$(".card").parent().parent().attr('hidden',true);
-			$(".card.bg-success").parent().parent().removeAttr('hidden');
-        }
-        if (this.value == 'infoButton') {
-			$(".card").parent().parent().attr('hidden',true);
-			$(".card.bg-info").parent().parent().removeAttr('hidden');
+        if (this.value == 'tracktype-round-table') {
+			$('.card , h4.text-secondary').attr('hidden',true);
+  			$(".card.tracktype-round-table").attr('hidden',false);
         }
     });
 });
 
+
+// '.col-12.rounded[class*="bg-"]'
+// $('.col-12.rounded[class*="bg-"]').css('style', 'background-color: transparent !important');
+
+
+
+
+
 // Clear Sorting
 $('#clearAllButton').click(function() {
 	$('input[type=radio]').prop('checked', false);
-	$(".card").parent().parent().attr('hidden',false);
+	$(".card , h4.text-secondary").attr('hidden',false);
 });
  
 // Smooth On Scroll Nav with Offsets 
