@@ -1,7 +1,18 @@
 // Enables Tool Tip 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
+
+// Nav on Scroll Add Class 
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	if (scroll >= 100) {
+        $(".agenda-day-nav").addClass("on-scroll-agenda");
+
+    } else {
+        $(".agenda-day-nav").removeClass("on-scroll-agenda");
+    }
+});
 
 // Dynamically add the +/- icon
 $(document).ready(function() {
@@ -76,3 +87,6 @@ $('.scroll').on('click',function(e) {
 		// window.location.hash = target;
 	});
 });
+
+
+ 
