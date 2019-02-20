@@ -23,7 +23,7 @@ footer [class*="col"] a:hover {color:#fff;}
 
 /* Agenda CSS */
 .agenda-day-nav{transition: all 0.4s ease;}
-.on-scroll-agenda {position:fixed; top:3.5em; left:0; right:0; z-index:99; padding-top:.75em; background:#fbfbfb; transition: all 0.4s ease;}
+.on-scroll-agenda {position:fixed; top:3.5em; left:0; right:0; z-index:99; padding-top:.75em; background:#fbfbfb; transition: all 0.4s ease; -webkit-box-shadow: 0 3px 10px 1px rgba(0,0,0,.3)!important; box-shadow: 0 3px 10px 1px rgba(0,0,0,.3)!important;}
 
 .bg-primary {background:rgba(66, 139, 202, .1)!important;}
 .bg-info    {background:rgba(91, 192, 222, .2)!important;}
