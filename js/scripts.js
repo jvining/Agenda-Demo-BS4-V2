@@ -27,11 +27,11 @@ $(document).ready(function() {
 	$('#toggle').click(function() {
 		if ($('.collapse').hasClass('show')) {
 			$('.collapse').removeClass('show');
-			$('#toggle').html('+ Expand All Panels');
+			$('#toggle').html('+ Expand All Session Details');
 			$('.card-header').children('i').removeClass('fa-minus').addClass('fa-plus');
  		} else {
 			$('.collapse').addClass('show');
-			$('#toggle').html('- Collapse All Panels');
+			$('#toggle').html('- Collapse All Session Details');
 			$('.card-header').children('i').removeClass('fa-plus').addClass('fa-minus');
  		}
 	});
@@ -60,12 +60,6 @@ $(document).ready(function() {
         }
     });
 });
-
-
-// '.col-12.rounded[class*="bg-"]'
-// $('.col-12.rounded[class*="bg-"]').css('style', 'background-color: transparent !important');
-
-
 
 
 
