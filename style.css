@@ -7,45 +7,53 @@ rgba(217, 83, 79, 1.0)
  */
 
 body {background:#fbfbfb; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
-body > .container:first-of-type, .container-fluid:first-of-type{margin-top:5em;}
+body > .container:first-of-type, .container-fluid:first-of-type{margin-top:6em;}
 
 footer {background:#343a40; margin-top:50px; padding:15px 0 0 0;}
 footer [class*="col"] {border:none; background:none; min-height:0; color:#666;}
 footer [class*="col"] a {color:#999;}
 footer [class*="col"] a:hover {color:#fff;}
- 
+
+/* Typography */ 
 .fa-lg,.fa-1x,.fa-2x,.fa-3x,.fa-4x,.fa-5x,.fa-6x,.fa-7x,.fa-8x,.fa-9x,.fa-10x{line-height:1.2em!important;} 
 .fa-lg{font-size:1.33333333em!important;} .fa-1x{font-size:1.5em!important;} 
 .fa-2x{font-size:2em!important;} .fa-3x{font-size:3em!important;} .fa-4x{font-size:4em!important;} 
 .fa-5x{font-size:5em!important;} .fa-6x{font-size:6em!important;} .fa-7x{font-size:7em!important;} 
 .fa-8x{font-size:8em!important;} .fa-9x{font-size:9em!important;} .fa-x {font-size:10em!important;}
 @media(max-width:768px){.fa-lg,.fa-1x,.fa-2x,.fa-3x,.fa-4x,.fa-5x,.fa-6x,.fa-7x,.fa-8x,.fa-9x,.fa-10x{font-size:1.2em!important;}}
+@media(max-width:768px){h1{font-size:2em!important;} h2.fa-5x{font-size:1.95em!important;} h2.fa-4x{font-size:1.75em!important;} h2.fa-3x{font-size:1.55em!important;} h2.fa-2x{font-size:1.35em!important;} h2.fa-1x{font-size:1.25em!important;} h2.fa-lg{font-size:1.25em!important;} h3{font-size:1.15em!important;} p.fa-lg{font-size:.85em!important;} blockquote p{font-size:1.1em!important;} blockquote cite{font-size:.85em!important;} p, ul, ol, li, table, address, blockquote, cite{font-size:14px!important;line-height:1.5em!important;}}
 
 /* Agenda CSS */
 .agenda-day-nav{transition: all 0.4s ease;}
 .on-scroll-agenda {position:fixed; top:3.5em; left:0; right:0; z-index:99; padding-top:.75em; background:#fbfbfb; transition: all 0.4s ease; -webkit-box-shadow: 0 3px 10px 1px rgba(0,0,0,.3)!important; box-shadow: 0 3px 10px 1px rgba(0,0,0,.3)!important;}
+@media(max-width:768px){ .on-scroll-agenda {position:fixed; top:5.5em;}}
 
 .bg-primary {background:rgba(66, 139, 202, .1)!important;}
-.bg-info    {background:rgba(91, 192, 222, .2)!important;}
+.bg-info {background:rgba(91, 192, 222, .2)!important;}
 .bg-success {background:rgba(92, 184, 92, .2) !important}
 .bg-warning {background:rgba(240, 173, 78, .2)!important;}
-.bg-danger  {background:rgba(217, 83, 79, .2)!important;}
+.bg-danger {background:rgba(217, 83, 79, .2)!important;}
 
 .badge-primary {background:rgba(66, 139, 202, .6)!important;}
-.badge-info    {background:rgba(91, 192, 222, .6)!important;}
+.badge-info {background:rgba(91, 192, 222, .6)!important;}
 .badge-success {background:rgba(92, 184, 92, .6)!important}
-.badge-danger  {background:rgba(217, 83, 79, .6)!important;}
+.badge-danger {background:rgba(217, 83, 79, .6)!important;}
 .badge-warning {background:rgba(240, 173, 78, .6)!important; color:#fff!important;}
-.badge-dark    {background: rgba(52, 58, 64, .6); color: #fff;}
+.badge-dark {background: rgba(52, 58, 64, .6); color: #fff;}
 
 .card{border-radius:0!important; }
+.card-body .row [class*="col-"] > div  {width:200px;}
 
 .card .collapse.show .card-body {border-bottom:1px rgba(0, 0, 0, 0.125) solid;}
-.card .collapse.show .card-body .card {border:1px #ddd solid!important;  }
+.card .collapse.show .card-body .card {border:1px #ddd solid!important; }
 .card .collapse.show .card-body .card img {border-radius:0;}
 .card .collapse.show .card-body .card .card-body {border:none!important;}
 
 .card-title {cursor:pointer; font-size:1em; margin:.2em 0;}
-.card-time {font-size: .8em; color:#5f5f5f; margin:.2em 0; }
-.card-moderator, .card-speakers {font-size:.6em; margin:.2em 0;}
+.card-time {font-size:1em; color:#5f5f5f; margin:.2em 0; }
+.card-moderator, .card-speakers {font-size:.75em; margin:.2em 0;}
 .card-body {font-size:.9em; background:#fff;}
+
+.speaker-image-block{height:198px;width:198px; overflow:hidden; display:block; margin:0 auto; position:inherit;}
+.speaker-image-block > img:first-of-type{transition: all 0.3s ease;}
+.speaker-image-block:hover > img:first-of-type{margin-top:-225px; transition: all 0.3s ease;}
